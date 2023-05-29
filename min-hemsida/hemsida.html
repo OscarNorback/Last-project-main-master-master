@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oscar-Norback</title>
+  <link href="hemsida.css" rel="stylesheet" />
+  <link href="footer.css" rel="stylesheet" />
+  <link href="fråga.css" rel="stylesheet" />
+  <link href="form.css" rel="stylesheet" />
+  <link href="burger.css" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/fcc90535f0.js" crossorigin="anonymous"></script>
+  <script src="hemsida.js" defer></script>
+  <script src="fråga.js" defer></script> 
+</head>
+
+<body>
+  <h1>Välkommen till Oscars värld</h1>
+  <header class="header">
+    <nav class="primary-navigation">
+      <ul class="primary-navigation__links">
+        <li><a class="nav-link" href="#"> Hem </a></li>
+        <li>
+          <a class="nav-link" href="#bilder"> Bilder </a>
+        </li>
+        <li><a class="nav-link" href="#Glass"> Glass </a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="hamburger-menu">
+    <input id="menu__toggle" type="checkbox" />
+    <label class="menu__btn" for="menu__toggle">
+      <span></span>
+    </label>
+  
+    <ul class="menu__box">
+      <li><a class="menu__item" href="#">Home</a></li>
+      <li><a class="menu__item" href="#bilder"> Bilder</a></li>
+      <li><a class="menu__item" href="#Glass">Glass</a></li>
+    </ul>
+  </div>
+  
+
+  <section class="background-img"></section>
+  <div class="container">
+    <img src="/images/Oscar.png" alt="Bild på Oscar" class="img-oscar" />
+    <div class="overlay">Mitt namn är Oscar</div>
+  </div>
+  <h2 id="bilder">Här är några bra bilder på mig och mina vänner.</h2>
+  <div class="slideshow-container">
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 4</div>
+      <img class="carousel" src="/images/unknown_1.png" />
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 4</div>
+      <img class="carousel" src="/images/Skopaddan.jpg" />
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 4</div>
+      <img class="carousel" class="img-3" src="/images/Dante.png" />
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">4 / 4</div>
+      <img class="carousel" class="img-4" src="/images/Grönan.jpg" />
+
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+
+  <div class="header-dot">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+  </div>
+  <div class="question-container">
+    <div class="question">
+      <h3 class="question-text">Fråga 1: Vilka tre personer är med på bild 3?</h3>
+      <div class="option">
+        <input type="radio" name="people" id="option1" class="correct">
+        <label class="quiz" for="option1"></label>
+        <span class="choice">Cris, Morris och Oscar</span>
+      </div>
+      <div class="option">
+        <input type="radio" name="people" id="option2">
+        <label class="quiz" for="option2"></label>
+        <span class="choice">Max, Johan och Oscar</span>
+      </div>
+      <div class="option">
+        <input type="radio" name="people" id="option3">
+        <label class="quiz" for="option3"></label>
+        <span class="choice">Cris, Assar och Hampus</span>
+      </div>
+    </div>
+  
+    <div class="question">
+      <h3 class="question-text">Fråga 2: Vart är de på bild 4?</h3>
+      <div class="option">
+        <input type="radio" name="location" id="option4">
+        <label class="quiz" for="option4"></label>
+        <span class="choice">Liseberg</span>
+      </div>
+      <div class="option">
+        <input type="radio" name="location" id="option5" class="correct">
+        <label class="quiz" for="option5"></label>
+        <span class="choice">Grönalund</span>
+      </div>
+      <div class="option">
+        <input type="radio" name="location" id="option6">
+        <label class="quiz" for="option6"></label>
+        <span class="choice">Skara Sommarland</span>
+      </div>
+    </div>
+  </div>
+
+  <h2 id="Glass">Här är min favoritglass</h2>
+  <div class="image-container">
+    <img src="/images/piggelin.webp" alt="Startbild" class="start-image">
+    <img src="/images/Glassbåt.png" alt="Hoverbild" class="hover-image">
+  </div>
+  
+  <footer>
+    <div class="footer-content">
+      <div class="f-about">
+        <h3>Oscar Norbäck</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem vero sequi eligendi accusantium at quos
+        voluptatibus numquam hic excepturi! Impedit, eveniet facere? Cum repudiandae accusamus qui nam soluta
+        dignissimos sint!</p>
+      </div>  
+      <div class="social-media">
+        <h4>Sociala medier</h4>
+        <ul class="socials">
+          <li><a href="https://www.facebook.com/oscar.norback.5"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="https://www.instagram.com/oscar_norback/"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="https://www.tiktok.com/@oscartryintobefamous"><i class="fa-brands fa-tiktok"></i></i></a></li>
+       </ul>
+    </div>
+    <div class="footer-menu">
+      <ul class="f-menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#bilder">Bilder</a></li>
+        <li><a href="#Glass">Glass</a></li>
+      </ul>
+    </div> 
+    <div class="f-form">
+      <form action="https://formsubmit.co/ogganorback@gmail.com" method="POST">
+        <fieldset class="message-box">
+          <legend>Skicka meddelande</legend>
+            <label for="email">E-post:</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email"
+                required/>
+            <label class="m-box" for="message">Meddelande:</label>
+              <textarea
+                name="message"
+                id="massage"
+                cols="50"
+                rows="4"
+                placeholder="Meddelande."></textarea>
+            <input type="submit" class="btn-send" id="send" name="send" />
+        </fieldset>
+      </form>
+    </div>
+    </div>
+  </footer>
+</body>
+</html>

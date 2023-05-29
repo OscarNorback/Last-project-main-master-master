@@ -1,0 +1,49 @@
+.question-container {
+    display: grid;
+    place-items: center;
+  }
+  
+  .question {
+    width: 400px;
+    border: 2px solid #000000;
+    border-radius: 8px;
+  }
+  
+  .option {
+    display: grid;
+    place-items: center;
+    border: 1px solid #000;
+    background-color: white;
+  }
+  
+  .question-text {
+    background-color: white;
+    border: 1px solid #000;
+  }
+  
+  input[type="radio"] {
+    display: none;
+  }
+  
+  .quiz {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #000;
+    cursor: pointer;
+  }
+
+  input[type="radio"]:checked + .quiz {
+    background-color: #000;
+  }
+  
+  .correct {
+    background-color: rgb(11, 224, 11) !important;
+  }
+  
+  .wrong {
+    background-color: red !important;
+  }
+  
+  span.choice {
+    font-size: 16px;
+  }
